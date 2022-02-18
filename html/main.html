@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+        <!-- 超連結 -->
+        <div>
+            <a href="https://www.google.com.tw/?hl=zh_TW">google</a>
+            <a href="https://www.google.com.tw/?hl=zh_TW" target="_blank">google新分頁</a>
+            <a href="mailto:b10807019@gapps.knu.edu.tw">mail</a>
+        </div>
+
+        <!-- id超連結 (錨點) -->
+        <div>
+            <!-- ul 黑點標籤 -->
+            <ul>
+                <li><a href="#rainy">雨天</a></li>
+                <li><a href="#sunny">晴天</a></li>
+                <li><a href="#cloudy">陰天</a></li>
+            </ul>
+
+            <!-- dl dd dt 縮排 -->
+            <dl>
+                <dt id="rainy">雨天</dt>
+                <dd>下雨天要發霉了</dd>
+            </dl>
+            <!-- br換行 hr水平分割線 -->
+            <br>
+            <hr>
+            
+            <dl>
+                <dt id="sunny">晴天</dt>
+                <dd>大太陽真舒服</dd>
+            </dl>
+
+            <br>
+            <hr>
+            <dl>
+                <dt id="cloudy">陰天</dt>
+                <dd>陰天真涼爽</dd>
+            </dl>
+
+            <!-- ol 元素表示項目符號 例如 A 1 a -->
+            <br>
+            <hr>
+
+            <ol type="A">
+                <li>番茄</li> 
+                <li>水</li>
+                <li>糖</li>
+            </ol>
+            <hr>
+            <!--嵌入圖片-->
+            <div>
+                <img src="/images/cat.jpg">
+                <img src="/images/cat.jpg" width="20%">
+                <img src="/images/cat.jpg" width="600px" >
+                <img src="/images/cat.jpg" height="100px" >
+                <img src="/images/cat.jpg" height="30%" >
+                <img src="/images/cat.jpg" width="200px" height="100px">
+            </div>
+            <br>
+            <hr>
+            <div>
+                <img src="/images/cat.jpg" alt="貓貓圖">
+                <img src="/images/cat.jpg" alt="貓貓圖">
+                <figure>
+                    <img src="/images/cat.jpg" alt="貓貓圖">
+                    <figcaption>喵帕斯</figcaption>
+                </figure>
+                <br>
+                <hr> 
+            <!-- 嵌入影片 -->
+                <video src="/video/alike.mp4" width="300px" height="300px" controls></video>
+                <video src="/video/alike.mp4" width="500px" height="500px" poster="/images/cat.jpg" controls></video>
+                <iframe width="885" height="498" src="https://www.youtube.com/embed/jzScvCzQVt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+
+            <!-- 表格 -->
+            <table  frame="border" rules="cols">
+                <caption>飲料訊息</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>美粒果</th>
+                        <th>舒跑</th>
+                        <th>黑松沙士</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>大卡</td>
+                        <td>300</td>
+                        <td>300</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>糖</td>
+                        <td><img src="images/cat.jpg"></td>
+                        <td><img src="images/cat.jpg"></td>
+                        <td><img src="images/cat.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>脂肪</td>
+                        <td>1.0</td>
+                        <td>1.0</td>
+                        <td>1.0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <hr>
+            <button>touch me</button>
+            <!-- from表單 -->
+            <form>
+                <!-- 按鈕 -->
+                <input type="button" value="touch">
+                <input type="submit" value="提交">
+                <input type="reset" value="重置">
+
+                <!-- 文字方塊 -->
+                <p>姓名 : <input type="text" name="username" size="20"></p>
+                <p>電子郵件 : <input type="text" name="usermail" size="60" value="username@mail.com"></p>
+
+                <!-- 選擇按鈕 -->
+                <p>年齡 : 
+                    <input type="radio" name="userAge" value="age1" checked>未滿20歲
+                    <input type="radio" name="userAge" value="age2">20~29
+                    <input type="radio" name="userAge" value="age3">30~39
+                    <input type="radio" name="userAge" value="age4">40~49
+                    <input type="radio" name="userAge" value="age5">50~59
+                    <input type="radio" name="userAge" value="age6">60歲以上
+                </p> 
+
+                <!-- 核取方塊 -->
+                <p>
+                    你吃過哪種香菇?
+                    <input type="checkbox" name="mushroom"  value="mushroom1" checked>杏鮑菇
+                    <input type="checkbox" name="mushroom"  value="mushroom2">鴻喜菇
+                    <input type="checkbox" name="mushroom"  value="mushroom3">金針菇
+                    <input type="checkbox" name="mushroom"  value="mushroom4">松茸
+                </p>
+
+                <!-- 多行文字方塊 -->
+                你是否有抱怨的事?
+                <p>
+                    <textarea name="userTrouble" cols="45" rows="20">抱怨內容</textarea>
+                </p>
+                <!-- 下拉 -->
+                <p>
+                    你哪家網路的?
+                    <select name="userwifi" size="4" miltiple>
+                        <option value="中華電信" >中華電信
+                        <option value="台灣大哥大">台灣大哥大
+                        <option value="遠傳電信" selected>遠傳電信
+                        <option value="台灣之星">台灣之星
+                    </select>
+                </p>
+
+                <!-- 密碼 -->
+                <p>
+                    請輸入密碼 : <input type="password" name="userpasswd" size="10">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                </p>
+
+                <!-- email -->
+                <p>
+                    email :
+                    <input type="email">
+                    <input type="submit" value="提交">
+                </p>
+
+                <!-- 網址 -->
+                <p>
+                    url :
+                    <input type="url">
+                    <input type="submit" value="提交">
+                </p>
+
+                <!-- 數字 -->
+                <p>
+                    number 
+                    <input type="number" min="0" max="20" step="2">
+                    <input type="submit">
+                </p>
+
+                <!-- 滑條 -->
+                <p>
+                    range
+                    <input type="range" min="0" max="30" step="3">
+                    <input type="submit">
+                </p>
+                <!-- 顏色 -->
+                <p>
+                    <input type="color">
+                    <input type="submit">
+                </p>
+                <!-- 隱藏 -->
+                <p>
+                    手機號碼
+                    <input type="text" placeholder="請輸入電話號碼">
+                    <input type="submit">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
